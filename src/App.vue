@@ -1,11 +1,13 @@
-<template>
+<!--<template>
   <div id="app">
-    <!--<img src="./assets/logo.png">
+    &lt;!&ndash;<img src="./assets/logo.png">
     <hello-world></hello-world>
     <p>nested: {{nested.a.b}}</p>
     <p>{{name}}</p>
     <button @click="change">change</button>
-    <button @click="changeLast">changeLast</button>-->
+    <button @click="changeLast">changeLast</button>&ndash;&gt;
+
+
     <router-view></router-view>
   </div>
 </template>
@@ -90,4 +92,28 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-</style>
+</style>-->
+
+
+<template>
+  <div id="app">
+    <header>
+      <router-link to="/home">Home</router-link>
+      <router-link to="/java">java</router-link>
+      <router-link to="/node">node</router-link>
+      <router-link to='/xxx'>XXX</router-link>
+    </header>
+    <!-- 对应组件的内容渲染到router-view中 -->
+    <router-view></router-view>
+  </div>
+</template>
+
+<script type="text/javascript">
+  export default {
+    data() {
+      return {
+
+      }
+    }
+  }
+</script>
